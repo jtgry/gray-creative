@@ -1,0 +1,32 @@
+.block-container:nth-child(even){
+  .block-image{
+    float: right;
+    margin-right: 0;
+  }
+}
+.block-image{
+  height: auto;
+  margin-bottom: $spacing-unit / 2;
+  @include column(3/5);
+  @media (max-width: $tablet) {
+    @include stack();
+  }
+}
+
+.block-content{
+  height: 70vh;
+  display: table;
+  @include column(2/5);
+  @media (max-width: $tablet) {
+    @include stack();
+  }
+  h2{
+    margin-bottom: $spacing-unit / 2;
+  }
+  p{
+    margin-bottom: $spacing-unit / 1;
+  }
+  button, a.button{
+    margin: 0;
+  }
+}
