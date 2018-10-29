@@ -16,6 +16,8 @@
 .block-content{
   height: 70vh;
   display: table;
+  max-width: $content-width;
+  margin: 0 auto;
   @include column(2/5);
   @media (max-width: $tablet) {
     @include stack();
